@@ -1,0 +1,104 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+  width: 200px;
+}
+
+.container-hero{
+  background-color: #3D4BE0;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.content-hero h1{
+  color: #FFF;
+font-size: 64px;
+}
+
+.hero-actions{
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-actions button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #40B9A6;
+  font-weight: bold;
+  color: #FFF;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.hero-actions button a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.hero-actions button:disabled{
+  background-color: #666;
+  cursor: auto;
+}
+
+/* Estilo base para o texto */
+.content-hero h1 {
+  font-size: 18px; 
+}
+
+.redes-social ul{
+  list-style: none;
+  color: #FFF;
+  font-size: 28px;
+
+  cursor: pointer;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.redes-social ul li a{
+  color: #FFF;
+}
+
+
+/* Aplicando um tamanho maior em telas maiores */
+@media screen and (min-width: 768px) {
+  .content-hero h1 {
+    font-size: 40px;
+  }
+  .hero-actions button{
+    font-size: 16px;
+  }
+}
+
+/* Aplicando um tamanho menor em telas menores */
+@media screen and (max-width: 480px) {
+  .content-hero h1 {
+    font-size: 16px;
+  }
+  .hero-actions button{
+    font-size: 12px;
+  }
+}
